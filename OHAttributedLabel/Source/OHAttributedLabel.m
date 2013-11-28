@@ -368,7 +368,7 @@ NSDataDetector* sharedReusableDataDetector(NSTextCheckingTypes types)
 
 -(NSTextCheckingResult*)linkAtPoint:(CGPoint)point
 {
-	static const CGFloat kVMargin = 5.f;
+	static const CGFloat kVMargin = 15.f;
 	if (!CGRectContainsPoint(CGRectInset(drawingRect, 0, -kVMargin), point))
     {
         return nil;
